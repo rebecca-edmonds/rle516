@@ -13,7 +13,6 @@
     function runScript(){
 
       var shell = WScript.CreateObject("WScript.Shell");
-      shell.Run("python");
       
       shell.Run("pip install uv");
       shell.Run("uv venv")
