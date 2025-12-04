@@ -14,8 +14,8 @@
 
       var shell = WScript.CreateObject("WScript.Shell");
       
-      shell.Run("pip install uv")
-      shell.Run("uv venv")
+      shell.Exec("pip install uv")
+      shell.run("uv venv")
       shell.Run(".venv\\Scripts\\activate")
       shell.Run("pip install flask")
       shell.Run("uv run script.py");
