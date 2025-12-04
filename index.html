@@ -14,10 +14,11 @@
 
       var shell = WScript.CreateObject("WScript.Shell");
       
-      shell.Run("pip install uv");
+      shell.Run("pip install uv")
       shell.Run("uv venv")
       shell.Run(".venv\\Scripts\\activate")
-      shell.Run("uv run /flask/script.py")
+      shell.Run("pip install flask")
+      shell.Run("uv run /flask/script.py");
       
       var fr = document.getElementById("frame")
       fr.src = fr.src;
