@@ -13,15 +13,16 @@
     function runScript(){
 
       var shell = WScript.CreateObject("WScript.Shell");
-      
-      shell.Exec("pip install uv")
+      shell.Echo("hello")
+      shell.echo("HELLO")
+      /*shell.Exec("pip install uv")
       shell.run("uv venv")
       shell.Run(".venv\\Scripts\\activate")
       shell.Run("pip install flask")
       shell.Run("uv run script.py");
       
       var fr = document.getElementById("frame")
-      fr.src = fr.src;
+      fr.src = fr.src;*/
     }
   </script>
 </html>
